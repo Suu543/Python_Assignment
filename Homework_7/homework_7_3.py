@@ -7,6 +7,18 @@ class Date:
         self.mt = mt
         self.dy = dy
 
+    # format for MDYYYY
+    def MDYYYY(self):
+        print(f'{self.mt}/{self.dy}/{self.yr}')
+
+    # format for MDYY
+    def MDYY(self):
+        print(f'{self.mt}/{self.dy}/{self.yr}')
+
+    # format for YYYYMD
+    def YYYYMD(self):
+        print(f'{self.yr}/{self.mt}/{self.dy}')
+
     def __str__(self):
         return f'({self.yr}- {self.mt}-{self.dy})'
 
